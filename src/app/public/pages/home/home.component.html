@@ -1,0 +1,7 @@
+<h1>Home</h1>
+<p>Welcome to Eventify</p>
+@if (!errorMessage){
+  <app-event-registered [events]="events"/>
+} @else {
+  <div class="error">{{ errorMessage }}</div>
+}
